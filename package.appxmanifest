@@ -16,9 +16,7 @@
   <Applications>
     <Application Id="App" StartPage="https://insti.app">
       <uap:ApplicationContentUriRules>
-        <uap:Rule Match="https://example.com" Type="include" WindowsRuntimeAccess="all" />
-        <uap:Rule Match="https://*.*" Type="include" WindowsRuntimeAccess="none" />
-        <uap:Rule Match="http://*.*" Type="include" WindowsRuntimeAccess="none" />
+        <uap:Rule Match="https://insti.app" Type="include" WindowsRuntimeAccess="all" />
       </uap:ApplicationContentUriRules>
       <uap:VisualElements DisplayName="InstiApp" Description="InstiApp is the front page of all student activities at IIT Bombay" BackgroundColor="#448aff" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" ShortName="InstiApp" Square310x310Logo="images\LargeTile.png" Square71x71Logo="images\SmallTile.png">
@@ -39,5 +37,6 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
   </Capabilities>
 </Package>
