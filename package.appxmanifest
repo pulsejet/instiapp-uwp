@@ -21,6 +21,7 @@
         <uap:Rule Match="http://localhost:4200/" Type="include" WindowsRuntimeAccess="all" />
       </uap:ApplicationContentUriRules>
       <uap:VisualElements DisplayName="InstiApp" Description="InstiApp is the front page of all student activities at IIT Bombay" BackgroundColor="#448aff" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+        <uap:LockScreen Notification="badge" BadgeLogo="images\BadgeLogo.png" />
         <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" ShortName="InstiApp" Square310x310Logo="images\LargeTile.png" Square71x71Logo="images\SmallTile.png">
           <uap:TileUpdate Recurrence="hour" UriTemplate="https://api.insti.app/mstile" />
           <uap:ShowNameOnTiles>
