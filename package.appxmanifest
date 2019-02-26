@@ -14,14 +14,18 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" StartPage="https://insti.app">
+    <Application Id="App" StartPage="https://insti.app/">
       <uap:ApplicationContentUriRules>
         <uap:Rule Match="https://insti.app" Type="include" WindowsRuntimeAccess="all" />
+        <uap:Rule Match="https://gymkhana.iitb.ac.in" Type="include" WindowsRuntimeAccess="none" />
+        <uap:Rule Match="http://localhost:4200/" Type="include" WindowsRuntimeAccess="all" />
       </uap:ApplicationContentUriRules>
       <uap:VisualElements DisplayName="InstiApp" Description="InstiApp is the front page of all student activities at IIT Bombay" BackgroundColor="#448aff" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" ShortName="InstiApp" Square310x310Logo="images\LargeTile.png" Square71x71Logo="images\SmallTile.png">
+          <uap:TileUpdate Recurrence="hour" UriTemplate="https://api.insti.app/mstile" />
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
             <uap:ShowOn Tile="square310x310Logo" />
           </uap:ShowNameOnTiles>
         </uap:DefaultTile>
