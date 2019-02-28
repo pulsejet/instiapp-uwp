@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="db2eaba8-e628-4f6f-995d-7f2888dc00dc" Version="1.0.0.0" Publisher="CN=varun" />
-  <mp:PhoneIdentity PhoneProductId="db2eaba8-e628-4f6f-995d-7f2888dc00dc" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="11961WebandCodingClubIITB.601699FBD1195" Version="1.0.4.0" Publisher="CN=9143ECB6-50BD-47B3-AF88-2D9C089A9E12" />
+  <mp:PhoneIdentity PhoneProductId="096c1ae0-3eb5-474b-9308-599b4b3a5490" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>InstiApp</DisplayName>
-    <PublisherDisplayName>varun</PublisherDisplayName>
+    <PublisherDisplayName>Web and Coding Club, IIT Bombay</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -14,7 +14,7 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" StartPage="https://insti.app/">
+    <Application Id="App" StartPage="https://insti.app">
       <uap:ApplicationContentUriRules>
         <uap:Rule Match="https://insti.app" Type="include" WindowsRuntimeAccess="all" />
         <uap:Rule Match="https://gymkhana.iitb.ac.in" Type="include" WindowsRuntimeAccess="none" />
@@ -42,6 +42,7 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <uap:Capability Name="appointments" />
     <DeviceCapability Name="location" />
   </Capabilities>
 </Package>
