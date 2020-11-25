@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="11961WebandCodingClubIITB.601699FBD1195" Version="1.0.4.0" Publisher="CN=9143ECB6-50BD-47B3-AF88-2D9C089A9E12" />
+  <Identity Name="11961WebandCodingClubIITB.601699FBD1195" Version="1.0.10.0" Publisher="CN=9143ECB6-50BD-47B3-AF88-2D9C089A9E12" />
   <mp:PhoneIdentity PhoneProductId="096c1ae0-3eb5-474b-9308-599b4b3a5490" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>InstiApp</DisplayName>
@@ -14,11 +14,12 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" StartPage="https://insti.app">
+    <Application Id="App" StartPage="https://www.insti.app">
       <uap:ApplicationContentUriRules>
+        <uap:Rule Match="https://www.insti.app" Type="include" WindowsRuntimeAccess="all" />
         <uap:Rule Match="https://insti.app" Type="include" WindowsRuntimeAccess="all" />
-        <uap:Rule Match="https://gymkhana.iitb.ac.in" Type="include" WindowsRuntimeAccess="none" />
-        <uap:Rule Match="http://localhost:4200/" Type="include" WindowsRuntimeAccess="all" />
+        <uap:Rule Match="https://gymkhana.iitb.ac.in" Type="include" WindowsRuntimeAccess="all" />
+        <uap:Rule Match="https://sso.iitb.ac.in" Type="include" WindowsRuntimeAccess="all" />
       </uap:ApplicationContentUriRules>
       <uap:VisualElements DisplayName="InstiApp" Description="InstiApp is the front page of all student activities at IIT Bombay" BackgroundColor="#448aff" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
         <uap:LockScreen Notification="badge" BadgeLogo="images\BadgeLogo.png" />
